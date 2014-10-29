@@ -1,0 +1,110 @@
+<html>
+<head>
+</head>
+<body>
+	<div class="container">
+    <div class="intro-content">
+      <img class="logo" src="images/logo2.jpg">
+      <a href="#" class="button">ENTRAR</a>
+    </div>
+	  <div class="open"> </div>
+	  <div class="door"></div>
+	  <div class="doorB"></div>
+    
+    
+	</div>
+</body>
+
+
+<style type="text/css">
+*{box-sizing: border-box;}
+body{
+	background:url(images/fondo.jpg);
+	width: 600px;
+	margin: 0 auto;
+  padding: 30px;
+}
+.container{
+  background:url(images/telon2.jpg);
+	background-size:100%;
+	width: 800px;
+	height: 400px;
+  margin-top: 5%;
+  margin-left: -10%;
+  position: absolute;
+  overflow: hidden;
+}
+.intro-content{
+  padding: 30px 0 0 30px;
+  vertical-align: middle;
+  position: absolute;
+}
+.logo{
+  margin: 0px auto;
+  vertical-align: middle;
+  margin-top: 5%;
+  margin-left: 245px;
+  position: relative;
+ }
+.button{
+  border-style: solid;
+  border-width: 0px;
+  position: inherit;
+  background-color: #ed230b;
+  color: white;
+  /*padding-top: 0.88889rem;
+  padding-right: 1.77778rem;
+  padding-bottom: 0.94444rem;
+  padding-left: 1.77778rem;*/
+  text-align: center;
+  padding: 6px 12px;
+  left: 350px;
+  top: 250px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 1px #320909;
+
+}
+.open{
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 328px;
+  position: absolute;
+  border-top: solid 10px #000;
+  z-index: 99999;
+}
+.open:hover ~ .door{
+  width: 10px;
+  transition: .7s linear;
+}
+.open:hover ~ .doorB{
+  width: 10px;
+  transition: .7s linear;
+}
+
+.door{
+  /*background: linear-gradient(90deg, firebrick, black);*/
+  background:url(http://buildinternet.com/live/curtains/images/frontcurtain.jpg);
+  background-size: 50% 100%;
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  transition: width .4s linear;
+  /*border-bottom: solid 10px firebrick;*/
+  cursor: resize;
+}
+
+.doorB{
+ background:url(http://buildinternet.com/live/curtains/images/frontcurtain.jpg);
+  background-size: 50% 100%;
+  width: 50%;
+  height: 400px;
+  float: right;
+  margin-left: 300px;
+  position: relative;
+  transition: width .4s linear;
+  /*border-bottom: solid 10px firebrick;*/
+  cursor: resize;
+}
+
+</style>
+</html>
